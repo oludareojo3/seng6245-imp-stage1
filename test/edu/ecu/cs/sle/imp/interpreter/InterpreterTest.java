@@ -15,10 +15,10 @@ public class InterpreterTest {
 	public static void setUpClass() {
 		interpreter = new Interpreter();
 	}
-	
+	//
 	@Test
 	public void testMultiply() {
 		IntegerValue iv = interpreter.interpret("1*2");
-		assertEquals("1*2", 2, iv.getIntValue().intValue());
+		assertEquals("1*2",2, iv.getIntValue().intValue());
 	}	
 }
